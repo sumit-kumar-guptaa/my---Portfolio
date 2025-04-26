@@ -263,39 +263,6 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        .skill-progress {
-            margin-top: 40px;
-        }
-
-        .progress-bar {
-            margin: 20px 0;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .progress-bar span {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-            color: #1a2a6c;
-        }
-
-        .progress {
-            height: 10px;
-            background: #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #b21f1f, #fdbb2d);
-            width: 0;
-            transition: width 1.5s ease-in-out;
-        }
-
         .dark-mode-toggle {
             position: fixed;
             top: 20px;
@@ -317,7 +284,7 @@
             background: #2a2a2a;
         }
 
-        body.dark-mode .section-title, body.dark-mode .progress-bar span {
+        body.dark-mode .section-title {
             color: #fdbb2d;
         }
 
@@ -376,7 +343,7 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div data-aos="fade-up" data-aos-delay="100">
-                <p>I’m a Data Science innovator passionate about harnessing machine learning, AI, and advanced analytics to tackle complex challenges. My goal is to bridge the gap between data and actionable insights, driving impactful solutions.</p>
+                <p>I’m an aspiring data scientist with a growing passion for deep learning and natural language processing (NLP). I thrive on exploring data, building models, and uncovering insights that drive real-world impact. My interests lie in the intersection of data, AI, and human language—using tools like Python, TensorFlow, and NLP libraries to build models that can understand and generate human-like text. From data wrangling and analysis to training neural networks, I’m constantly learning and developing skills that bridge the gap between raw data and intelligent systems. I'm excited about solving challenging problems in areas like sentiment analysis, text classification, and generative AI.</p>
                 <div class="skills-container">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">Machine Learning</span>
@@ -387,20 +354,6 @@
                     <span class="skill-tag">PyTorch</span>
                     <span class="skill-tag">NLP</span>
                     <span class="skill-tag">Big Data</span>
-                </div>
-                <div class="skill-progress" data-aos="fade-up" data-aos-delay="200">
-                    <div class="progress-bar">
-                        <span>Python</span>
-                        <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="progress-bar">
-                        <span>Machine Learning</span>
-                        <div class="progress"><div class="progress-fill" style="width: 85%;"></div></div>
-                    </div>
-                    <div class="progress-bar">
-                        <span>Data Analysis</span>
-                        <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -416,8 +369,8 @@
                     <p><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Matplotlib, Seaborn</p>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Movie Recomendation System</h3>
-                    <p>A Machine Learning based project ude use to recomend the Movie of same type which you have provided</p>
+                    <h3>Student Performance pridector</h3>
+                    <p>A Machine Learning based project which helps students to pridect there score based on given on data </p>
                     <p><strong>Tech Stack:</strong> Python, Numpy Pandas, feature engineering, data cleaning,ML Algorithms.</p>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
@@ -473,7 +426,7 @@
                 <div class="social-links">
                     <a href="https://github.com/sumit-kumar-guptaa" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/sumit-kumar-9b4970285" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://x.com/sumitkumar76678?t=WJ016RQI-vBW6HKtbuPCsg&s=09" title="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="mailto:sumit.gupta.14486@email.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
@@ -616,17 +569,6 @@
             renderer.setSize(width, 400);
             camera.aspect = width / 400;
             camera.updateProjectionMatrix();
-        });
-
-        // Progress bar animation on scroll
-        window.addEventListener('scroll', () => {
-            const progressBars = document.querySelectorAll('.progress-fill');
-            progressBars.forEach(bar => {
-                const rect = bar.getBoundingClientRect();
-                if (rect.top < window.innerHeight) {
-                    bar.style.width = bar.getAttribute('style').split(': ')[1];
-                }
-            });
         });
     </script>
 </body>
